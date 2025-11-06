@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Cliente - Reservas de Mesas</title>
+    <link rel="stylesheet" href="../CSS/cliente.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva de Mesas</h1>
+        <p>Bem-vindo! Consulte, reserve ou altere sua mesa.</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Fazer Reserva</h2>
+            <form>
+
+                <label>Horário:</label>
+                <select name="horario" id="horario" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="almoco">Almoço</option>
+                    <option value="jantar">Jantar</option>
+                </select>
+
+                <label>Número da Mesa:</label>
+                <input type="number" required min="1" max="10">
+
+                <label>Número de Pessoas:</label>
+                <input type="number" min="1" max="4" required>
+            
+                <label for="">Nome:</label>
+                <input type="text" required>
+
+                <button type="submit" class="btn">Reservar</button>
+            </form>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <p>© 2025 Equipe ECOTRASH </p>
+    </footer>
+</body>
+</html>

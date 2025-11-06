@@ -1,0 +1,93 @@
+:root {
+    --verde: #228B22;
+    --amarelo: #FFA500;
+    --laranja: #ED5E03;
+    --bege: #FFF8DC;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bege);
+    margin: 0;
+    color: #333;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    background-color: var(--verde);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-left: 6px solid var(--laranja);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--laranja);
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+input, textarea, select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--amarelo);
+    color: black;
+}
+
+.btn.cancel {
+    background-color: var(--laranja);
+}
+
+.btn.edit {
+    background-color: var(--amarelo);
+    color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--verde);
+    color: white;
+    margin-top: 2rem;
+    
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+}
