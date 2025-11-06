@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo Restaurante - Administração</title>
+    <link rel="stylesheet" href="restaurante.css">
+</head>
+<body>
+    <header>
+        <h1>Painel do Restaurante</h1>
+        <p>Gerencie mesas e visualize reservas.</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Cadastro e Gerenciamento de Mesas</h2>
+            <form>
+                <label>Número da Mesa:</label>
+                <input type="number" required>
+                <label>Capacidade:</label>
+                <input type="number" required>
+                <button type="submit" class="btn">Salvar Mesa</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Visualização de Reservas</h2>
+            <form>
+                <label>Data:</label>
+                <input type="date" required>
+                <label>Horário:</label>
+                <input type="time" required>
+                <button type="submit" class="btn">Ver Reservas</button>
+            </form>
+
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Mesa</th>
+                        <th>Cliente</th>
+                        <th>Horário</th>
+                        <th>Pessoas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5</td>
+                        <td>Maria</td>
+                        <td>19:30</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>8</td>
+                        <td>João</td>
+                        <td>20:00</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Equipe ECOTRASH</p>
+    </footer>
+</body>
+</html>
